@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery 기초</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        #box.hover {
+            background-color: blue;
+            border-radius: 50px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- <script src="../js/jquery-3.7.0.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            $('#box').css({
+                width: 100,
+                height: 100,
+                backgroundColor: 'orenge'
+            }).on('click', function() {
+                $(this).css('backgroundColor', 'blue')
+            }).on('mouseenter', function() {
+                $(this).css('backgroundColor', 'red')
+            }).on('mouseleave', function() {
+                $(this).css('backgroundColor', 'orange')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
