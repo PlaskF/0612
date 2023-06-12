@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JQuery 기초</title>
+    <!-- https://code.jquery.com/ JQuery 라이브러리 코드 복사(CDN 호스트) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        //문서가 준비되었을 때 호출될 익명함수를 선언
+        $(document).ready(function () {
+            // h1 태그에 적용될 CSS 속성과 값 설정
+            $('h1').css('color','red')
+            $('h1').css('background','black')
+        })
+    </script>
 </head>
 <body>
-    
+    <h1>Artificial Intelligence</h1>
+    <h1>Polytech University</h1>
+    <h1>2301110338</h1>
 </body>
 </html>
